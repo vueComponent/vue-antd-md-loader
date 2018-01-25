@@ -1,0 +1,43 @@
+{
+  "name": "vue-antd-md-loader",
+  "version": "1.0.0",
+  "description": "markdown file to vue component loader.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd example && webpack-dev-server --inline --hot --port 8888 --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangjinzhou/vue-antd-md-loader.git"
+  },
+  "keywords": [
+    "vue",
+    "markdown",
+    "webpack",
+    "loader"
+  ],
+  "author": "415800467@qq.com",
+  "license": "WTFPL",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "highlight.js": "^9.4.0",
+    "loader-utils": "^0.2.15",
+    "markdown-it": "^8.4.0"
+  },
+  "peerDependencies": {
+    "vue-loader": ">=10.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "github-markdown-css": "^2.3.0",
+    "style-loader": "^0.13.1",
+    "vue": "^2.0.3",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
