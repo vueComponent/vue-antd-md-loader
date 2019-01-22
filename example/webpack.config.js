@@ -1,5 +1,6 @@
 var resolve = require("path").resolve;
 var webpack = require("webpack");
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: "./src/entry.js",
@@ -28,13 +29,18 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        loader: resolve(__dirname, "../index.js"),
-        options: {}
+        use: ['vue-loader', {
+          loader: resolve(__dirname, "../index.js"),
+          options: {wrapper: 'div', raw: true}
+        }],
       }
     ]
   },
   devServer: {
     historyApiFallback: true,
     noInfo: true
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+  ],
 };
