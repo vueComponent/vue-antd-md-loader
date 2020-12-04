@@ -20,7 +20,7 @@
   "license": "WTFPL",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "highlight.js": "^9.4.0",
+    "highlight.js": "^10.4.1",
     "loader-utils": "^1.2.3",
     "markdown-it": "^8.4.0"
   },
